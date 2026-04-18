@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mon site</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+        padding: 50px;
+      }
+
+      h1 { color: #333; }
+
+      table {
+        width: 80%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+
+      th {
+        background-color: #0c46ab;
+        color: white;
+        padding: 14px;
+        font-size: 16px;
+      }
+
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        color: #333;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      .boutons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .download-btn {
+        display: inline-block;
+        background: #0c46ab;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .download-btn:hover {
+        background: #0c46ab;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>Emploi du temps</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ECAM EPMI</th>
+          <th>Puissance Alpha</th>
+          <th>GEIPI</th>
+          <th>Avenir</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>20 Avril 2026</td>
+          <td>25 Avril 2026</td>
+          <td>28 Avril 2026</td>
+          <td>2 mai 2026</td>
+        </tr>
+        <tr>
+          <td>13 Boulevard Hautil, 95092 Cergy Pontoise Cedex</td>
+          <td>13 Avenue Morane Saulnier 78140</td>
+          <td>Parc des Expositions de Villepinte, ZAC Paris Nord 2 - 93420  VILLEPINTE</td>
+          <td>Espace Jean Monnet, Parc Icade, Rue du Bélier, 94150 RUNGIS</td>
+        </tr>
+        <tr>
+          <td>9h45 - 11h15</td>
+          <td>9h00 - 13h15</td>
+          <td>Pas encore eu</td>
+          <td>12h00 - 18h00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="boutons">
+      <a href="fichier1.pdf" download class="download-btn">
+        📄 Convocation Puissance Alpha
+      </a>
+      <a href="fichier2.pdf" download class="download-btn">
+        📄 Convocation GEIPI (pas dispo)
+      </a>
+      <a href="fichier3.pdf" download class="download-btn">
+        📄 Convocation Avenir
+      </a>
+    </div>
+  </body>
+</html>
